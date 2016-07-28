@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>PetShop</title>
+      <title>Análises Laboratoriais</title>
 
     </head>
 
@@ -30,7 +30,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">Sistema PetShop</a>
+            <a class="navbar-brand" href="">Análises Laboratoriais</a>
           </div>
 
           <div class="collapse navbar-collapse" id="navbar">
@@ -58,7 +58,7 @@
     		</div>
 
 
-    </div> <!-- /container -->
+    </div> 
 
 
 </body>

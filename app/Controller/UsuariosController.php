@@ -9,6 +9,7 @@ class UsuariosController extends AppController{
         $this->redirect(array('action' => 'area_administrativa'));
     }
 
+  
     public function area_administrativa(){}
 
     public function view($id){
@@ -85,7 +86,7 @@ class UsuariosController extends AppController{
 
     public function login(){
         if(!empty($this->data['Usuario']['login'])){
-            // Validar
+
             $usuário = $this->validar();
             if($usuário != false){
                 $usuarioInfo = $this->Usuario->findByLogin($this->data['Usuario']['login']);

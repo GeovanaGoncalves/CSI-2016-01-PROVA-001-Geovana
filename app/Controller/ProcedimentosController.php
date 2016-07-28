@@ -111,18 +111,17 @@ class ProcedimentosController extends AppController{
          }
     }
 
-    public function delete($id = null){
-        if($this->request->is('get')){
-            throw new MethodNotAllowedException();
-        }
-        $exame = $this->Exame->findByProcedimentoId($id);
-        if($exame == null && $this->Procedimento->delete($id)){
+    public function delete($id){
+
+        $procedimento = $this->Procedimento->find('all', array('conditions'=> array('Procedimento.id' => $id)));
+
+        if($procedimento == null || $this->Procedimento->delete($id)){
             $this->Flash->success(__('Procedimento %s foi excluído com sucesso.', h($id)));
             return $this->redirect(array('action' => 'index'));
         }else{
             $this->Flash->error(__('Procedimento %s não pôde ser excluído.', h($id)));
         }
-        return $this->redirect(array('action' => 'listaProcedimentos'));
+        return $this->redirect(array('action' => 'lista_procedimentos'));
     }
 }
 ?>
