@@ -1,0 +1,179 @@
+/* Native */
+body {
+  width: 1044px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* DIV's */
+
+#header {}
+
+#main {}
+
+#footer {
+  border-top: 1px solid black;
+  font-size: 10pt;
+}
+
+#menu {
+  padding-left: 10px;
+}
+
+#contato {
+	width: 30%;
+  background-color: #d6e5f4;
+  padding: 10px;
+  margin: auto;
+}
+
+#contato input[type=text], textarea {
+  background-color: #EDF2F7;
+  width: 300px;
+  border: solid 1px #85b1de;
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  padding: 4px;
+}
+
+#contato input[type=email] {
+  background-color: #EDF2F7;
+  width: 300px;
+  border: solid 1px #85b1de;
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  padding: 4px;
+}
+
+#formulario {
+	background-color: #E0E0E0;
+	padding-left: 10px;
+}
+
+#formulario input[type=text] { padding-left: 3px; }
+#formulario input[type=password] { width: 169px; padding-left: 3px;}
+#formulario input[id=email] { width: 200px; }
+
+#formulario input[id=nome] { width: 665px; margin-left: 25px}
+#formulario input[id=endereco] { width: 300px; }
+#formulario input[id=numero] { width: 50px; }
+#formulario input[id=complemento] { width: 129px; }
+#formulario input[id=cpf] { margin-left: 37px; width: 169px; }
+#formulario input[id=matricula] { width: 169px;}
+#formulario input[id=email] { width: 300px}
+#formulario input[id=telefone] { margin-left: 4px; }
+#formulario input[id=senha] { margin-left: 20px; }
+#formulario input[id=rg] { margin-left: 42px; }
+#formulario input[id=rua] { margin-left: 37px; }
+#formulario input[name=cidade] { margin-left: 20px;}
+#formulario input[id=celular] { margin-left: 18px; }
+
+
+#formulario label[for=nome] { margin-left: 15px; }
+#formulario label[for=cidade] { margin-right: 15px; }
+#formulario label[for=uf] { margin-left: 42px; margin-right: 16px;}
+#formulario label[for=sexo] { margin-left: 15px; }
+#formulario label[for=endereco] { margin-left: 14px; }
+#formulario label[for=numero] { margin-left: 15px;}
+#formulario label[for=complemento] { margin-left:15px;}
+#formulario label[for=cpf] { margin-left: 14px; }
+#formulario label[for=celular] { margin-left: 14px; }
+#formulario label[for=senhaconf] { margin-left: 14px; }
+#formulario label[id=sexo] { margin-left: 38px; }
+#formulario label[for=email] { margin-left: 15px; }
+#formulario label[for=tiposangue] { margin-left: 14px; }
+#formulario label[id=rh] { margin-left: 15px; }
+#formulario label[id=acessos] { margin-right: 2px; }
+#formulario label[for=aluno] { margin-right: 68px; }
+#formulario label[for=disciplina] { margin-right: 41px; }
+#formulario label[id=tipoaluno] { margin-right: 11px; }
+
+#lista td, #lista th {
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 3px 7px 2px 7px;
+}
+
+#lista th {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: rgb(120,0,36);
+    color: #ffffff;
+}
+
+#lista tr.alt td {
+    color: #000000;
+    background-color: lightgray;
+}
+
+#lista table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabela table {
+  width: auto;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#tabela th {
+  color: white;
+  text-align: left;
+  background-color: #C7C029;
+  padding: 3px 7px 2px 7px;
+  border-top: 2px solid gray;
+}
+
+#tabela th:first-child {
+  border-left: 2px solid gray;
+}
+
+#tabela th:last-child {
+  border-right: 2px solid gray;
+}
+
+#tabela td {
+  font-size: 1em;
+  padding: 3px 7px 2px 7px;
+  border-right: 1px solid gray;
+}
+
+#tabela td:first-child {
+  border-left: 2px solid gray;
+}
+
+#tabela td:last-child {
+    border-right: 2px solid gray;
+}
+
+
+#tabela table tr:last-child {
+  border-bottom: 2px solid gray;
+}
+
+#tabela tr.blue {
+  color: white;
+  background: rgb(62,128,224);
+  border-bottom: 1px solid white;
+}
+
+#tabela tr.alt {
+  background-color: rgb(238,238,238);
+}
+
+table.fixed { table-layout:fixed; width:100%; word-break:break-all;}
+
+/* Class */
+
+.center { text-align: center; }
+.huge {font-size: 20pt; }
