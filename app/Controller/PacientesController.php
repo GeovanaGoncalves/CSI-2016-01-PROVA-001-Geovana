@@ -62,17 +62,17 @@ class PacientesController extends AppController{
          }
     }
 
-    public function delete($id){
-
-        $paciente = $this->Paciente->find('all', array('conditions'=> array('Paciente.id' => $id)));
-
-        if($paciente == null || $this->Paciente->delete($id)){
+    public function delete($id = null){
+        if($this->request->is('get')){
+            throw new MethodNotAllowedException();
+        }
+        if($this->Paciente->delete($id)){
             $this->Flash->success(__('Paciente %s foi excluído com sucesso.', h($id)));
-            return $this->redirect(array('action' => 'lista_pacientes'));
+            return $this->redirect(array('action' => 'index'));
         }else{
             $this->Flash->error(__('Paciente %s não pôde ser excluído.', h($id)));
         }
-        return $this->redirect(array('action' => 'lista_pacientes'));
+        return $this->redirect(array('action' => 'index'));
     }
 
     public function validar(){
